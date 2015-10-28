@@ -1,0 +1,12 @@
+/* 列印 及 轉PDF 用 */
+
+body{ padding:0; background:none !important; font-family:Arial; }
+header, footer, .share_prod, #go-to-top, .btnSwitch, .purchase, .destroy, .pager { display:none!important;; }
+.page-break  { display:block; page-break-after:always; }
+
+.singleDisplay .box { position:relative !important; top:0 !important; }
+
+/* driven-by-design */
+#DBDWrap .sidebar .recommend { margin-top:862px; }
+#DBDWrap .aboutAthor .seeMore { display:none; }
+#DBDWrap p.hide { display:block; }

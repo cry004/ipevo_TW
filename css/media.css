@@ -1,0 +1,74 @@
+/* media query css setting */
+
+/* For Small Screen */
+/*@media only screen and (max-width: 1125px) {*/
+/*@media only screen and (max-width: 1280px) {*/
+@media only screen and (max-width: 1210px) {
+/* 產品格 分享區塊 */
+.slider .share_prod { left:10px; top:auto; bottom:30px; height:0px; overflow:visible; width:320px;}
+.slider .share_prod:hover { width:320px; }
+.slider .share_prod .share{ width:auto; height:auto; position:static; }
+.slider .share_prod:hover .share { width:auto; }
+.slider .share_prod .outside { display:none; }
+
+.slider .share_prod .inside .likes { position:static; visibility:visible; float:left; }
+.slider .share_prod .inside .fb-like { margin-right:10px; }
+.slider .share_prod .inside .google-like { width:70px; }
+.slider .share_prod .inside .twi-like { /*width:95px; margin-right:5px;*/ display:none; }
+.slider .share_prod .inside .plurk-like { /*margin-right:10px;*/ display:none; }
+.slider .share_prod .inside .pdf_d{ border-top:none; margin:-3px 0 0; padding:0; }
+
+/* 單一產品小畫面時 Social Share 改為位置不隨畫面移動 */
+.singleDisplay .share_prod{position:absolute; top:10px; margin-left:0px; z-index:10;}
+
+.slider .share_prod .inside .fb-like { left:85px; top:0px; }
+.slider .share_prod .inside .googleplus-one { left:165px; top:2px; }
+
+/* GoToTop Button位置 */
+#go-to-top{ right:10px; }
+
+/* 調整左下方相關產品連結疊到 Social Share */
+.ziggi .page01 .bag,
+.ziggi_case .page01 .bag,
+.height_extension_stand .page01 .p2v,
+.magnifying_lens .page01 .p2v,
+.p2v_case .page01 .p2v,
+.p2v .page01 .accessories,
+.ziggi_hd .page01 .bag { bottom:40px; }
+
+}
+
+/* For Screen under 1024 x 768 */
+@media only screen and (max-width: 1024px){
+	body { padding:0; }
+	#go-to-top{ right:0px; bottom:0px; }
+}
+
+/* iPads (portrait and landscape) */
+@media only screen and (device-width: 768px) {
+	body { padding-top:0; }
+	#go-to-top{ right:0px; bottom:0px; }
+	.slider.ziggi .page01 .elem ul { width:305px; }
+	.slider .pdf_d{ display:none; }
+}
+
+/* iPads (portrait) */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+	/*
+    #aboutWrap{min-height:649px}
+    #contactWrap{min-height:753px}
+    */
+}
+
+/* iPhone & other mobile phone */
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+	/* For portrait layouts only */
+
+	/*.logo{border:solid blue 3px;}*/
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+	/* For landscape layouts only */
+
+	/*.logo{border:solid red 3px;}*/
+}

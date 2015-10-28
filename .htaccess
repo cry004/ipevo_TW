@@ -1,0 +1,54 @@
+RewriteEngine On
+Options -Indexes
+
+#Avoid XSS
+RewriteCond %{REQUEST_METHOD} ^TRACE
+RewriteRule .* -[F]
+
+# protect the htaccess file
+<files ~ "^.(htaccess)$">
+order deny,allow
+deny from all
+</files>
+
+# protect git files
+RewriteRule ^(.*/)?\.git/ - [F,L]
+ErrorDocument 403 "Access Forbidden"
+
+# protect .gitignore
+<files ~ "^.(gitignore)$">
+order deny,allow
+deny from all
+</files>
+
+# protect svn files
+RewriteRule ^(.*/)?\.svn/ - [F,L]
+ErrorDocument 403 "Access Forbidden"
+
+# Compress
+<ifmodule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/html text/plain text/xml application/x-javascript text/javascript application/x-httpd-php
+AddOutputFilter DEFLATE js css
+</ifmodule>
+
+# Shorten Url
+RewriteRule ^([a-z_0-9-]+)$ index.php?page=$1
+
+# Redirect all 404 error to homepage
+ErrorDocument 404 http://www.ipevo.com.tw
+
+# We dont like you
+RewriteCond %{HTTP_REFERER} taobao.com/.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} tmall.com/.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} paipai.com/.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} weiphone.com/.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} maishayo.cn/.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} alibaba.com/.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ruanjianbbs.com/.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} 24315.tv/.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} hitao.com/.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} baidu.com/.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} baihuo.com/.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} item.taobao.com/.*$ [NC]
+RewriteRule \.(jpg|jpeg|JPG|JPEG|png|PNG|gif|GIF|swf)$ - [F]
+

@@ -1,0 +1,49 @@
+/* IE only */
+
+header nav ul.main li.hasChild.tabi ul.dropdown li { line-height:19px; }
+
+.slider.ziggi .page01 p.enlarge { margin-top:50px; }
+
+/* IE Only 產品格 分享功能 */
+/*
+.slider .share_prod_IE { height:124px; position:absolute; left:-80px; top:0; z-index:60; }
+.slider .share_prod_IE .share { width:48px; height:100%; position:absolute; left:0; top:0; background:#fff; }
+.slider .share_prod_IE .outside { z-index:2; }
+.slider .share_prod_IE .outside img { display:block; margin:10px 0 0 10px; }
+.slider .share_prod_IE .inside { z-index:1; overflow:hidden; }
+.slider .share_prod_IE .inside img { display:block; margin:10px 0 0 10px; }
+.slider .share_prod_IE .inside .fb-like { position:absolute; left:10px; top:10px; }
+.slider .share_prod_IE .inside .twi-like { position:absolute; left:10px; top:40px; width:85px; margin-right:5px; }
+
+.singleDisplay .share_prod_IE{position:fixed; left:50%; top:174px; margin-left:-560px;}
+*/
+
+/* PDF Download Icon */
+.slider .share_prod_IE .pdf_d{ visibility:visible; }
+.slider .share_prod_IE .pdf img.pdfImg{ margin:0 auto; }
+
+/* User Review */
+.slider .user_review ul.lastUL {margin-right:0;}
+
+/* IE7 */
+header{*z-index:999;}
+.slider .share_prod { *width:260px; }
+.ziggi .page01 .elem { *width:370px; }
+.ziggi .page01 .elem ul { *list-style:none; }
+.ziggi .page01 .elem .thumb{ *width:360px; }
+.security_holder .page01 .elem .thumb{ *width:360; }
+.typi .page01 .thumb { *width:400px; }
+
+@media only screen and (max-width: 1125px) {
+
+    .slider .share_prod_IE { left:10px; top:auto; bottom:30px; width:250px; height:0px;  overflow:visible; }
+    .slider .share_prod_IE .share{ height: auto; position:static; background:none;
+    overflow:visible !important; width:320px !important;}/*為了蓋 ie.js 寫入的 inline CSS*/
+    .slider .share_prod_IE .inside .fb-like { position:static; float:left; margin-right:10px; }
+    .slider .share_prod_IE .inside .twi-like { position:static; float:left; }
+    .slider .share_prod_IE .outside { display:none !important; }/*為了蓋 ie.js 寫入的 inline CSS*/
+    
+    /* 單一產品小畫面時 Social Share 改為位置不隨畫面移動 */
+    .singleDisplay .share_prod_IE{position:absolute; top:10px; margin-left:0px;}
+    
+}

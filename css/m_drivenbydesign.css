@@ -1,0 +1,229 @@
+@charset "utf-8";
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+body { font-size: 16px; /*background: #FFF url('../images/drivenbydesign/bg.png') repeat !important;*/ font-family: Arial, georgia, "Heiti TC", "微軟正黑體", sans-serif; }
+#DBDWrap h2 { color: #000; font-size: 1.5em; font-weight: 700; margin: 1em 20px 20px; }
+#DBDWrap h3 { color: #000; font-weight: 700; }
+
+#DBDWrap p { color: #484848; line-height: 1.5; margin: 1.5em 0; font-size:15px;  }
+#DBDWrap a, #DBDWrap a:link, #DBDWrap a:visited  { color: #76b900; cursor: pointer; text-decoration:none; }
+#DBDWrap a:hover { text-decoration: underline; }
+#DBDWrap img.ud { border-bottom: 3px solid #CC0E8C; }
+#DBDWrap .hide { display: none; }
+
+#DBDWrap { width:100%; margin:0 auto 30px; }
+
+/* 主視覺 */
+#DBDWrap #banner {
+	background: #FFF url('../images/drivenbydesign/m_banner_book_2.jpg') no-repeat; box-shadow: 0 0 5px #555;
+	position: relative; z-index: 0;	max-width: 100%; height: 359px; margin:15px 0;
+}
+/*
+#DBDWrap #banner h1 { z-index: 2; position: relative; padding-top: 94px; }
+#DBDWrap #banner .book { position: absolute; right: -34px; top: 0; z-index: 0; width: 660px; }
+#DBDWrap #banner .book img { display: inline-block; vertical-align: bottom; }
+
+#DBDWrap .author { margin: 18px 0 45px; }
+#DBDWrap .author strong { font-weight: bold; }
+#DBDWrap #banner .price {
+	position: absolute; text-align: left; z-index: 2;
+	right: 88px; top: 176px;
+}
+#DBDWrap #banner .price .money { margin-bottom: 7px; }
+#DBDWrap.saleMsg { padding-bottom: 35px; }
+#DBDWrap #banner .tag { position: absolute; right: 135px; top: 100px; z-index: 2; }
+#DBDWrap #banner .btn_addToCart {
+	width: 138px; height: 30px; display: block; border: none; cursor: pointer; clear: left;
+	background: url('../images/drivenbydesign/banner_btn.gif') 0 0 no-repeat;
+}
+#DBDWrap #banner .btn_addToCart:hover { background-position: bottom; }
+#DBDWrap #banner select#qty, #banner .btn_addToCart { float: left; margin-top: 7px; }
+#DBDWrap #banner select#qty { width: 50px; margin-right: 10px; }
+#DBDWrap #banner select#qty,
+#DBDWrap #banner select#qty option { font-size: 0.9375rem; line-height: 1; }
+*/
+
+#DBDWrap #banner .buyNow { position:absolute; display:block; width:122px; height:30px; bottom:20px; left:10px;
+ background:url('../images/drivenbydesign/buy_btn.gif') 0 0; }
+#DBDWrap #banner .buyNow:hover { background-position:0 -30px; }
+
+#DBDWrap #main {
+	position: relative;
+	z-index: 2;	
+	/*background-color: #FFF;*/
+}
+
+/* 內容(左) */
+#DBDWrap .content {
+	width: 480px; float: left; color: #484848;
+	/*background: #FFF url('../images/drivenbydesign/description_hand.jpg') right top no-repeat;*/
+}
+
+#DBDWrap .content > div { margin-bottom: 15px; }
+
+#DBDWrap .content .socialbar { position: absolute; right: 10px; top: 15px; padding-left: 60px; background: url('../images/drivenbydesign/yuanliou.png') 0 0 no-repeat; height:21px; }
+#DBDWrap .content .desc {
+	position: relative;	
+	background-color: #EF0690;	
+	padding: 35px 0 20px;
+	font-family: Arial, georgia, "Heiti TC", "微軟正黑體", sans-serif;
+}
+#DBDWrap .content .desc .inner { background-color: #FFF; margin: 15px 20px 0; position: relative; padding: 1px 22px 8px 22px;  }
+#DBDWrap .content .desc .inner .imgbg { position: absolute; right: -35px; bottom: 0; z-index: 0; }
+#DBDWrap .content .desc h2 img { padding: 8px 10px 8px 8px; background-color: #FFF; }
+#DBDWrap .content .desc h3 { margin: 25px 0 10px; position: relative; z-index: 2; }
+#DBDWrap .content .desc p { font-size: 15px; line-height: 1.75; margin: 10px 0; position: relative; z-index: 2; }
+
+#DBDWrap .content .desc h2 img.theW { padding:8px; width:424px; }
+
+/* 活動 */
+#DBDWrap .content .events a { float:left; }
+#DBDWrap .content .events a:hover { box-shadow: 0 0 5px rgba(0,0,0,0.5); }
+#DBDWrap .content .events a:hover img { opacity: 1; }
+#DBDWrap .content .events a.ad1 { margin-right: 12px; }
+
+#DBDWrap .content .inner > div { margin-bottom: 10px; }
+
+#DBDWrap h3.secTitle { height: 37px; /*line-height: 37px;*/ background-color: #FFF; display: inline-block; }
+#DBDWrap h3.secTitle img { padding: 6px; }
+
+/* 關於作者 */
+#DBDWrap .content .aboutAthor {
+	background-color: #00AAED; font-size: 1rem;
+}
+#DBDWrap .content .aboutAthor .inner { padding: 20px 20px 0; }
+#DBDWrap .content .aboutAthor .intro { padding: 30px 30px 17px; background-color: #FFF; margin: 0 2px 17px; *overflow:hidden; }
+#DBDWrap .content .aboutAthor .intro h3.secTitle img { padding: 0; }
+
+#DBDWrap .aboutAthor .intro .pic { float: left; margin-right: 20px; margin-bottom: 20px; }
+#DBDWrap .aboutAthor .intro .txt { float: left; }
+#DBDWrap .aboutAthor .intro .txt p.show { margin-top:0; font-size:15px; }
+#DBDWrap .aboutAthor .intro .txt p { line-height: 1.8; margin: 1em 0; }
+
+#DBDWrap .aboutAthor .btn_foreword { display: block; background: url('../images/drivenbydesign/author_btn.jpg') 0 0 no-repeat; width: 77px; height: 23px; margin-top: 40px; }
+#DBDWrap .aboutAthor .btn_foreword:hover { background-position: bottom; }
+
+/* ROYCE的作品 */
+#DBDWrap .content .aboutAthor .works { padding-left:47px; *height:287px; }
+#DBDWrap .content .aboutAthor .works h3 { background: none; margin-left: -5px; display: block; }
+#DBDWrap .content .aboutAthor .works .list { }
+#DBDWrap .content .aboutAthor .works a { border: 1px solid transparent; float: left; margin: 0 17px 17px 0; }
+#DBDWrap .content .aboutAthor .works a:hover { border: 1px dotted #FFF; }
+#DBDWrap .content .aboutAthor .works a.notyet:hover { border: 1px solid transparent; }
+
+#DBDWrap .content .aboutAthor .works a.text:hover { cursor: default; border-color: transparent; }
+#DBDWrap .content .aboutAthor .works a.right { margin-right:17px; }
+#DBDWrap .content .aboutAthor .works a img { border-bottom: 3px solid #CD0E8C;  }
+
+/* 側欄 */
+#DBDWrap .sidebar { width:100%; float: left; }
+#DBDWrap .sidebar > div { margin-bottom: 15px; padding: 20px 15px; }
+#DBDWrap .sidebar .video { padding: 0; }
+/*#DBDWrap .sidebar .playVideo { height: 172px; }*/
+/*#DBDWrap .sidebar .playVideo:hover img { margin-top: -172px; }*/
+#DBDWrap img.vdPreview { width: 480px; }
+
+
+/* 有理推薦 */
+#DBDWrap .sidebar .recommend { background-color: #ff8400; margin-bottom: 0; }
+#DBDWrap .sidebar .recommend .secTitle img { padding: 8px 10px 8px 8px	; }
+#DBDWrap .push { background-color: #FFF; padding: 10px; margin: 20px 0; }
+#DBDWrap .push p { margin: 0; }
+#DBDWrap .push p.ft { margin-top: 12px; }
+#DBDWrap .push strong.person { font-weight: 700; color: #000; font-size: 1.2em;  }
+#DBDWrap .push span.title { /*vertical-align: bottom;*/ padding-left: 5px; font-size: 12px; }
+#DBDWrap .push.reason { margin-bottom: 0; }
+#DBDWrap .push.reason h3.secTitle img { padding-left: 0; }
+#DBDWrap .push.reason p.ft { margin-top: 8px; }
+
+/* 開箱圖 */
+#DBDWrap .content .gallery { background-color: #FFF; /*box-shadow: 0 0 5px #555;*/ padding: 20px 0 5px 66px; *height:292px; }
+#DBDWrap .content .gallery h3 { clear: both; display: block; }
+#DBDWrap .content .gallery a { float: left; margin: 0 18px 15px 0; }
+#DBDWrap .content .gallery a img { border: 1px dotted transparent; }
+#DBDWrap .content .gallery a:hover img { border-color: #999; }
+
+/* ============ header ============ */
+/*
+#header #headerTop{padding:0 50px;}
+#header #optionZone{line-height:16px;}
+@media only screen and (device-width : 768px){
+    #header #headerTop{padding:0 10px;}
+    #header #searchZone .site-search-blank{margin-top:2px;}
+	.spe #sb-player { overflow: scroll; -webkit-overflow-scrolling:touch; }  
+}
+@media only screen and (max-device-width: 480px) {
+    body{padding-top:0; zoom:1;}
+    #header #ipevoLogo{margin:5px 0 0 10px;}
+    #header #searchZone .site-search-blank{margin-top:0px;}
+    #header #optionZone{ margin:10px 0 10px 20px; line-height:15px;}
+	.spe #sb-player { overflow: scroll; -webkit-overflow-scrolling:touch; }
+}
+#navigation{display:block;}
+
+#bottom { margin-top:10px; }
+#footer #footerTop #footerSW{width:27px;}
+#footer #footerTop #partners_s{left:890px;}
+#footer #footerMiddle{padding-left:56px;}
+#footer #footerBottom{padding-left:48px;}
+#footer p { margin:0; }
+*/
+
+/* shadowbox setting */
+#sb-container { z-index: 1001; }
+#sb-title { max-width: 80%; }
+#sb-overlay.spe { background-color: #FFF!important; opacity: 0.9!important; }
+.spe #sb-wrapper-inner { box-shadow: 0 0 12px rgba(0,0,0,0.35); border:none; }
+/*.spe #sb-wrapper { top: 135px!important; }*/
+.spe #sb-nav a { display: none; }
+.spe #sb-player { overflow: auto; -webkit-overflow-scrolling:touch; }
+#foreword {	padding: 70px 80px; color: #484848; font: normal 13px/18px Arial, georgia, "Heiti TC", sans-serif; position: relative; }
+#foreword #close { display: block; position: absolute; right: 20px; top: 20px; width: 17px; height: 17px; background-image: url('../images/drivenbydesign/btn_close.gif'); }
+#foreword h2 { font-size: 1.5em; line-height: 1.2; font-weight: 700; color: #000; font-family: Arial, georgia, "Heiti TC", "微軟正黑體", sans-serif; }
+#foreword h2 span { font-size: 13px; padding-left: 5px; font-weight: 100; color: #484848; }
+#foreword p { font-size: 14px; line-height: 1.8; margin: 1.5em 0; font-family: Arial, georgia, "Heiti TC", "微軟正黑體", sans-serif; }
+#foreword .c1 { color: #00AAED; }
+#foreword .c2 { color: #eb6100; } 
+#foreword .c3 { color: #76b900; }
+#foreword .c4 { color: #C90D98; }
+
+/* tooltip */
+.tip_txt { background-color: #FFF; border: 1px solid #CCC; font-size: 12px; line-height: 1.25em; max-width: 240px; padding: 0.5em 1em; }
+
+/* for Social Share */
+#DBDWrap .slider { display:block !important; height:0; margin:0; }
+
+
+
+/*
+	#DBDWrap { width:100%; }
+	#DBDWrap p { font-size:15px; }
+
+	#DBDWrap #banner { background-color: #FFF; max-width: 100%; padding-left: 10px; margin-bottom: 15px; background-position: 226px 42px; margin-top: 15px; height: 368px; }
+	#DBDWrap #banner h1 { padding-top: 17px; }
+	#DBDWrap #banner .tag { right: 10px; top: 10px; }
+	#DBDWrap #banner .author { margin-bottom: 17px; }
+	#DBDWrap #banner .saleMsg { display: none; }
+	#DBDWrap #banner .buyNow { right:auto; left:10px; }	
+
+	#DBDWrap .content { width:480px; margin:0; }
+	#DBDWrap .content .desc h2 img.theW { padding:8px; width:424px; }
+	#DBDWrap .content .desc p { font-size:15px; }
+	#DBDWrap .content .aboutAthor .works a.right { margin-right:17px; }
+	#DBDWrap .content .aboutAthor .intro .txt p.show { font-size:15px; }
+
+	
+	#DBDWrap .sidebar { width: 100%; }
+	#DBDWrap .sidebar .recommend { margin-bottom: 0; }
+
+
+	#DBDWrap img.vdPreview { width: 480px; }
+*/	
